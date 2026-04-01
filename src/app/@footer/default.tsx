@@ -1,3 +1,9 @@
+import RandomQuote from "./RandomQuote";
+
 export default function Footer() {
-  return <div>footer</div>;
+    return (
+        <footer>
+            <RandomQuote />
+        </footer>
+    );
 }
