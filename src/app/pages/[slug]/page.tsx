@@ -1,4 +1,5 @@
 import DateTime from "@/components/Date";
+import Markdown from "@/components/Markdown";
 import type { Page } from "@/types/Page";
 
 export default async function SlugPage(props: PageProps<"/pages/[slug]">) {
@@ -24,7 +25,7 @@ export default async function SlugPage(props: PageProps<"/pages/[slug]">) {
         )}
       </header>
 
-      {page.content}
+      <Markdown>{page.content}</Markdown>
     </article>
   );
 }
