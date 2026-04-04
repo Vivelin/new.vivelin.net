@@ -1,0 +1,27 @@
+.tag-container {
+    summary {
+        cursor: pointer;
+    }
+
+    &[open]::details-content {
+        position: absolute;
+        padding: 1rem;
+        width: 30rem;
+
+        background-color: rgb(0 0 0 / 80%);
+        border-radius: 0.5rem;
+        backdrop-filter: blur(3px);
+    }
+}
+
+.tag {
+    display: list-item;
+    list-style-position: inside;
+    border: 1px solid currentColor;
+    border-radius: 0.333rem;
+    padding: 0.333rem;
+
+    &::marker {
+        content: "#";
+    }
+}
